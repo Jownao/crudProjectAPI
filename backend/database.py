@@ -1,8 +1,13 @@
 from sqlalchemy import create_engine
 from sqlalchemy.orm import declarative_base
 from sqlalchemy.orm import sessionmaker
+from dotenv import load_dotenv
+import os
 
-SQLALCHEMY_DATABASE_URL = "postgresql://postgres:joh123@postgres/crudProjectAPI"
+# Carregar variáveis de ambiente
+load_dotenv('../.env')
+
+SQLALCHEMY_DATABASE_URL = f"postgresql://{os.environ.get('POSTGRES_USER')}:{os.environ.get('POSTGRES_PASSWORD')}@{os.environ.get('POSTGRES_HOST')}/{os.environ.get('POSTGRES_DB')}"
 
 # Cria o motor do banco de dados, é o conecta com o banco
 engine = create_engine(SQLALCHEMY_DATABASE_URL)
