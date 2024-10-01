@@ -1,10 +1,15 @@
 import streamlit as st
 import requests
 import pandas as pd
+import os
+
+
+current_dir = os.path.dirname(__file__)
+logo_path = os.path.join(current_dir, "logo.png")
 
 st.set_page_config(layout="wide")
 
-st.image("logo.png", width=200)
+st.image(logo_path, width=200)
 st.title("Gerenciamento de Produtos")
 
 
