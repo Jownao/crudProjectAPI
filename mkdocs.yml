@@ -1,0 +1,17 @@
+site_name: 'Documentação CRUD'
+theme:
+  name: 'material'
+
+plugins:
+  - search
+  - mkdocstrings:
+      default_handler: python
+
+nav:
+  - Home: index.md
+  - CRUD:
+      - crud.py: crud.md
+      - database.py: database.md
+      - models.py: models.md
+      - router.py: router.md
+      - schemas.py: schemas.md
