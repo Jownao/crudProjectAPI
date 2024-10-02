@@ -7,6 +7,29 @@ O projeto está todo containerizado com **Docker**, facilitando o processo de de
 
 ![Imagem](https://github.com/Jownao/crudProjectAPI/blob/main/pics/arquitetura.jpg)  
 
+```mermaid
+sequenceDiagram
+    participant U as Usuário
+    participant SW as Sistema Web Streamlit
+    participant API as FastAPI (Backend)
+    participant V as Validação Pydantic
+    participant DB as Banco de Dados SQLAlchemy (PostgreSQL)
+    
+    U ->> SW: Inserir Dados via Formulário
+    SW ->> API: Enviar Dados via Requisição HTTP
+    API ->> V: Enviar Dados para Validação (Pydantic)
+    alt Dados Válidos
+        API ->> DB: CRUD no Banco de Dados
+        DB ->> API: Confirmação de Sucesso ou Dados Solicitados
+        API ->> SW: Retornar Resposta de Sucesso
+        SW ->> U: Exibir Dados Salvos com Sucesso
+    else Dados Inválidos
+        V ->> API: Retornar Erros de Validação
+        API ->> SW: Retornar Mensagem de Erro
+        SW ->> U: Exibir Erro de Validação
+    end
+```
+
 ---
 
 ### Demonstração
