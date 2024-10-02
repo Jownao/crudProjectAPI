@@ -9,11 +9,11 @@ dependencies = [
     "mkdocs-material>=9.5.39",
     "mkdocstrings>=0.26.1",
     "mkdocstrings-python>=1.11.1",
-    "psycopg2-binary>=2.9.9",
     "pydantic[email]>=2.9.2",
     "python-dotenv>=1.0.1",
     "ruff>=0.6.7",
     "sqlalchemy>=2.0.35",
     "streamlit>=1.38.0",
     "uvicorn>=0.30.6",
+    "psycopg2-binary>=2.9.9",
 ]
