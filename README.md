@@ -5,7 +5,7 @@ Este projeto é um sistema de CRUD (Create, Read, Update, Delete) desenvolvido c
 
 O projeto está todo containerizado com **Docker**, facilitando o processo de desenvolvimento e deploy. Além disso, o código é mantido em conformidade com as boas práticas de desenvolvimento utilizando **Ruff** para análise estática de código.
 
-![Imagem]()  
+![Imagem](https://github.com/Jownao/crudProjectAPI/blob/main/pics/arquitetura.jpg)  
 
 ---
 
@@ -14,11 +14,11 @@ Veja o projeto em ação através do vídeo de demonstração no YouTube:
 🔗 [Demonstração do projeto](https://youtu.be/8HLwC8Y_jNw)
 
 **Capturas de Tela:**  
-![Imagem]()  
-![Imagem]()  
-![Imagem]()  
-![Imagem]()  
-![Imagem]()  
+![Imagem](https://github.com/Jownao/crudProjectAPI/blob/main/pics/post.jpg)  
+![Imagem](https://github.com/Jownao/crudProjectAPI/blob/main/pics/get.jpg)  
+![Imagem](https://github.com/Jownao/crudProjectAPI/blob/main/pics/get1.jpg)  
+![Imagem](https://github.com/Jownao/crudProjectAPI/blob/main/pics/delete.jpg)  
+![Imagem](https://github.com/Jownao/crudProjectAPI/blob/main/pics/put.jpg)  
 
 ---
 
