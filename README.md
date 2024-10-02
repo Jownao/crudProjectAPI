@@ -1,5 +1,6 @@
 # CRUD Project API
-
+![Documentation](https://img.shields.io/badge/Documentation-Available-green.svg)
+![Docker](https://img.shields.io/badge/Docker-Containerization-blue)
 ## Introdução
 Este projeto é um sistema de CRUD (Create, Read, Update, Delete) desenvolvido com uma arquitetura robusta utilizando várias ferramentas modernas, com o objetivo de criar uma aplicação eficiente e escalável para gestão de dados em um banco de dados **PostgreSQL**. O frontend é implementado com **Streamlit**, enquanto o backend utiliza **FastAPI** para manipulação de dados com **SQLAlchemy** como ORM e **Pydantic** para validação de dados. 
 
